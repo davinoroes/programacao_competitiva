@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+c = int(input())
+val1, val2, val3, val4, val5, val6 = (a+b+c), (a*b+c), (a*b*c), (a+b*c), ((a+b)*c), (a*(b+c))
+value = max(val1, val2, val3, val4, val5, val6)
+print(value)
