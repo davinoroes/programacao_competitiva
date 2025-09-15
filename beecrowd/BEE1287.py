@@ -4,20 +4,27 @@ while True:
     try:
         n = input()
         value = True
+        converted = ''
         for letter in n:
             if letter not in restritions:
                 print('error')
                 value = False
                 break
             if letter in sub:
-                n = n.replace(letter,sub[letter])
-            if letter == ',' or letter == ' ':
-                n = n.replace(letter,'')
+                converted += sub[letter]
+            elif letter ==  ' ' or letter == ',':
+                continue
+            else:
+                converted += letter
         if value:
-            if int(n) > 2147483647:
+            if converted == '':
+                print('error')
+                continue
+            num = int(converted)
+            if num > 2147483647:
                 print('error')
             else:
-                print(int(n))
+                print(num)
     except EOFError:
         break
 
