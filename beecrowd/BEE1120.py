@@ -1,7 +1,6 @@
 while True:
     try:
         d, n = map(str, input().split())
-        
         if d == '0' and n == '0':
             break
         if d in n:
