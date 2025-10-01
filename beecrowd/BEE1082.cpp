@@ -3,7 +3,7 @@ using namespace std;
 
 bool eh_diagonal(int x,int y,int z,int a){
     bool value = false;
-    int dif1, dif2;
+    unsigned int dif1, dif2;
     dif1 = abs(x - z);
     dif2 = abs(y - a);
     if(dif1 == dif2){
