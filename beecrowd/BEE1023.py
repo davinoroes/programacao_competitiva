@@ -1,4 +1,4 @@
-city = 0
+city =  0
 while True:
     try:
         N = int(input())
