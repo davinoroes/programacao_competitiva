@@ -19,7 +19,7 @@ int conversor_bin(vector<int> z) {
     int result = 0;
     for (int i = 0; i < int(z.size()); i++) {
         if (z[int(z.size()) - 1 - i] == 1) {
-            result += (1 << i); // 2^i sem usar pow()
+            result += (1 << i); 
         }
     }
     return result;
