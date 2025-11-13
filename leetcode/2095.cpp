@@ -9,16 +9,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-int qtd(ListNode *head){
-    if (head == NULL || head->next == NULL) return NULL;
-    ListNode *q = head;
-    int qtde = 0;
-    while(q->next != NULL){
-        qtde++;
-        q = q->next;
-    }
-    return qtde;
-}
+
 
 ListNode* deleteMiddle(ListNode* head) {
     if (head == NULL || head->next == NULL) return NULL;
@@ -33,11 +24,8 @@ ListNode* deleteMiddle(ListNode* head) {
         mid = mid->next; //agora eu tenho o ponteiro para o elemento do meio e o anterior a ele (vou precisar já que a lista é simplesmente encadeada)
     }
     mid_ant->next = mid->next;
-    
-
-
-
-    
+    delete mid;
+    return head;
 }
 
 int main(){
