@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 //quero adicionar a um vetor, a quantidade de elementos em blocos validos. Bloco validos são os elementos consecutivos menores iguais a temp. (quero adicionar somente o tamanho de cada bloco no vetor)
 vector<int> creation_vector(vector<int> test, int temp){
     vector<int> resp;
@@ -15,8 +14,6 @@ vector<int> creation_vector(vector<int> test, int temp){
     if (size_block != 0) resp.push_back(size_block);
     return resp;
 }
-
-
 int main(){
     int t;
     cin >> t;
