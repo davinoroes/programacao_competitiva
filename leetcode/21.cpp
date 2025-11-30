@@ -24,19 +24,15 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
             list2 = list2->next;            
         }
     }
-    if(list1 != NULL){
-        while(list1 != NULL){
-            curr->next = new ListNode(list1->val);
-            curr = curr->next;
-            list1 = list1->next;
-        }
+    while(list1 != NULL){
+        curr->next = new ListNode(list1->val);
+        curr = curr->next;
+        list1 = list1->next;
     }
-    else if(list2 != NULL){
-        while(list2 != NULL){
-            curr->next = new ListNode(list2->val);
-            curr = curr->next;
-            list2 = list2->next;
-        }
+    while(list2 != NULL){
+        curr->next = new ListNode(list2->val);
+        curr = curr->next;
+        list2 = list2->next;
     }
     return head->next;
 }
