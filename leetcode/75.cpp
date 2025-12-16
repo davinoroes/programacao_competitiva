@@ -9,8 +9,7 @@ void sortColors(vector<int>& nums) {
     int idx = 0;
     for(int i = 0; i < occurrence[0];i++) nums[idx++] = 0;
     for(int i = 0; i < occurrence[1];i++) nums[idx++] = 1;
-    for(int i = 0; i < occurrence[2];i++) nums[idx++] = 2;
-
+    for(int i = 0; i < occurrence[2];i++) nums[idx++] = 2;    
 }
 
 int main(){
